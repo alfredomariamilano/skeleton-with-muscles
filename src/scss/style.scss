@@ -1,0 +1,98 @@
+@import "./vendors-css/skeleton/normalize";
+@import "./vendors-css/skeleton/skeleton";
+
+@import "./vendors-css/flexbox/variables";
+@import "./vendors-css/flexbox/utilities";
+@import "./vendors-css/flexbox/flexbox";
+
+// .col {
+//   -webkit-transition: all 1s ease;
+//   -moz-transition: all 1s ease;
+//   -o-transition: all 1s ease;
+//   -ms-transition: all 1s ease;
+// }
+//
+// .col:hover {
+//   // font-size: 10px;
+//   padding: 0.5em 0 1em 1.5em;
+// }
+// body {text-align: center;}
+
+div.double {
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  h1 {
+    display: inline-block;
+    position: relative;
+    margin-top: 25px;
+    padding: 20px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+
+    &:hover {
+      border-radius: 100%;
+      background: rgba(243,243,21,0.6);
+    }
+
+    &:after {
+      left: 0;
+      right: 0;
+      top: -10px;
+      bottom: -10px;
+      content: '';
+      position: absolute;
+      display: block;
+      border: 1px solid;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      -ms-transition: all .5s;
+      transition: all .5s;
+    }
+
+    &:hover:after {
+      border-radius: 100%;
+      top: 0;
+      bottom: 0;
+      border-color: transparent;
+      // -ms-transform: rotate(-10deg);
+      // -webkit-transform: rotate(-10deg);
+      // transform: rotate(-10deg);
+    }
+
+    &:before {
+      left: -10px;
+      right: -10px;
+      top: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      display: block;
+      border: 1px solid;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      -ms-transition: all .5s;
+      transition: all .5s;
+    }
+
+    &:hover:before {
+      border-radius: 100%;
+      border-color: transparent;
+      left: 0;
+      right: 0;
+      // -ms-transform: rotate(10deg);
+      // -webkit-transform: rotate(10deg);
+      // transform: rotate(10deg);
+    }
+
+  }
+}
